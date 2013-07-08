@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Invoice Template</title>
+	<!--[if lt IE 9]>
+		<script src="dist/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<style type="text/css">
+		
+		.container {
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<hgroup>
+				<h1>Invoice</h1>
+				<h2>[name]</h2>
+				<h3>[company]</h3>
+			</hgroup>
+			<section class="prominent header-details">
+				<div class="details-personal fl-l">
+					<label for="email">Email:</label><span>[email]</span>
+					<label for="phone">Phone:</label><span>[phone]</span>
+				</div>
+				<div class="details-date fl-r">
+					<label for="date">Date:</label><span>[date]</span>
+				</div>
+			</section>
+		</header>
+		<section class="main-content">
+			<div class="address-block chunk fl-l">[address1]</div>
+			<div class="address-block chunk brdr-l fl-l">[address2]</div>
+		</section>
+		<section class="work-content">
+			<div class="work-block chunk fl-l">[work-definition]</div>
+			<div class="work-block chunk prominent fl-l">[work-charge]</div>
+		</section>
+		<section class="total-content">
+			<div class="total-block chunk prominent fl-l">
+				<h2>Total</h2>
+			</div>
+			<div class="total-block chunk prominent fl-l">
+				<p>[total-charge]</p>
+			</div>
+		</section>
+		<footer>
+			<div class="invoice-number-section">
+				<label for="invoice-number">Invoice No.</label><span>[invoice-no]</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
