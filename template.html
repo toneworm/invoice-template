@@ -7,13 +7,17 @@
 		<script src="dist/html5shiv.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="css/reset.css" type="text/css" />
-	<style type="text/css">
-		
-		.container {
-			
-		}
+	<link rel="stylesheet" href="css/template.css" type="text/css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="js/toneworm-invoice.js"></script>
+	<script type="text/javascript">
 
-	</style>
+		$(function () {
+			Invoice.init(invoiceDetails);
+		});
+
+	</script>
 </head>
 <body>
 	<div class="container">
