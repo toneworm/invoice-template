@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #515151; }
+
+.container {
+  padding: 25px 60px;
+  width: 1000px;
+  margin: 0 auto;
+  background: white; }
+
+header {
+  padding: 0 0 10px;
+  border-bottom: 4px solid #8F89B6;
+  line-height: 1.1; }
+  header h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #121530;
+    text-transform: uppercase;
+    width: 250px; }
+  header h2, header h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    font-weight: normal;
+    color: black;
+    width: 400px;
+    margin-bottom: 28px; }
+
+.details-personal {
+  font-size: 8px;
+  font-size: 0.8rem;
+  line-height: 1.5; }
+  .details-personal span, .details-personal label {
+    float: left; }
+  .details-personal label {
+    clear: left;
+    margin-right: 5px; }
+
+.details-date {
+  width: 250px;
+  padding-top: 20px;
+  text-transform: uppercase; }
+
+.total-content h2 {
+  text-transform: uppercase; }
+
+.section-chunk {
+  padding: 24px 0;
+  border-bottom: 4px solid #8F89B6;
+  line-height: 1.2;
+  font-size: 12px;
+  font-size: 1.2rem; }
+
+.invoice-number-section.section-chunk {
+  border-bottom: 0;
+  text-align: right;
+  padding-top: 10px;
+  font-size: 8px;
+  font-size: 0.8rem; }
+
+.chunk {
+  width: 460px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 40px; }
+  .chunk.brdr-l {
+    padding-left: 36px;
+    padding-right: 0;
+    border-left: 4px solid #8F89B6; }
+
+.fl-r {
+  float: right; }
+
+.fl-l {
+  float: left; }
+
+.prominent {
+  font-weight: bold; }
+
+.clear-this:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both; }

@@ -1,0 +1,124 @@
+// Default styles
+
+// Colours
+$black: #000;
+$white: #fff;
+$grey: #515151;
+$faded-grey: #efeff2;
+$dark-blue: #121530;
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+body {
+	@include font-size(1);
+	line-height: 1.5;
+	font-family: Arial, sans-serif;
+	color: $grey;
+	// background: $faded-grey;
+}
+
+.container {
+	padding: 25px 60px;
+	width: 1000px;
+	margin: 0 auto;
+	background: $white;
+}
+
+header {
+	padding: 0 0 10px;
+	border-bottom: 4px solid #8F89B6;
+	line-height: 1.1;
+
+	h1 {
+		@include font-size(3.6);
+		font-weight: bold;
+		color: $dark-blue;
+		text-transform: uppercase;
+		width: 250px;
+	}
+
+	h2, h3 {
+		@include font-size(2.8);
+		font-weight: normal;
+		color: $black;
+		width: 400px;
+		margin-bottom: 28px;
+	}
+}
+
+.details-personal {
+	@include font-size(0.8);
+	line-height: 1.5;
+
+	span, label {
+		float: left;
+	}
+
+	label {
+		clear: left;
+		margin-right: 5px;
+	}
+}
+
+.details-date {
+	width: 250px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+
+.total-content h2 {
+	text-transform: uppercase;
+}
+
+.section-chunk {
+	padding: 24px 0;
+	border-bottom: 4px solid #8F89B6;
+	line-height: 1.2;
+	@include font-size(1.2);
+}
+
+.invoice-number-section.section-chunk {
+	border-bottom: 0;
+	text-align: right;
+	padding-top: 10px;
+	@include font-size(0.8);
+}
+
+.chunk {
+	width: 460px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 40px;
+
+	&.brdr-l {
+		padding-left: 36px;
+		padding-right: 0;
+		border-left: 4px solid #8F89B6;	
+	}
+}
+
+// OO styles
+
+.fl-r {
+	float: right;
+}
+
+.fl-l {
+	float: left;
+}
+
+.prominent {
+	font-weight: bold;
+}
+
+.clear-this {
+	&:after {
+		content: " ";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
