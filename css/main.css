@@ -55,12 +55,14 @@ body {
 .container {
   padding: 25px 60px;
   width: 1000px;
+  height: 800px;
   margin: 0 auto;
-  background: white; }
+  background: white;
+  position: relative; }
 
 header {
   padding: 0 0 10px;
-  border-bottom: 4px solid #8F89B6;
+  border-bottom: 4px solid #8f89b6;
   line-height: 1.1; }
   header h1 {
     font-size: 36px;
@@ -97,7 +99,7 @@ header {
 
 .section-chunk {
   padding: 24px 0;
-  border-bottom: 4px solid #8F89B6;
+  border-bottom: 4px solid #8f89b6;
   line-height: 1.2;
   font-size: 12px;
   font-size: 1.2rem; }
@@ -117,7 +119,13 @@ header {
   .chunk.brdr-l {
     padding-left: 36px;
     padding-right: 0;
-    border-left: 4px solid #8F89B6; }
+    border-left: 4px solid #8f89b6; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 1000px;
+  border-top: 4px solid #8f89b6; }
 
 .fl-r {
   float: right; }
@@ -127,6 +135,9 @@ header {
 
 .prominent {
   font-weight: bold; }
+
+.no-border {
+  border: 0; }
 
 .clear-this:after {
   content: " ";
