@@ -2,7 +2,7 @@ var Invoice = {
 	invoiceDetails : {},
 	init : function ( _invoiceDetails ) {
 		// Adding invoice details object (overwrite empty object)
-		if( _invoiceDetails && typeof _invoiceDetails ) this.invoiceDetails = _invoiceDetails;
+		if( _invoiceDetails && typeof _invoiceDetails === 'object' ) this.invoiceDetails = _invoiceDetails;
 
 		this.replaceVars();
 	},
